@@ -1,0 +1,281 @@
+[
+  {
+    "id": "gost_1139_80",
+    "designation": "ГОСТ 1139-80",
+    "titleRu": "Основные нормы взаимозаменяемости. Соединения шлицевые прямобочные. Размеры и допуски",
+    "status": "active",
+    "effectiveFrom": "1982-01-01",
+    "effectiveTo": null,
+    "replaces": [],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost1139",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Прямобочные шлицевые соединения общего назначения",
+    "notes": [
+      "Имеет изменения и поправку; таблицы импортировать из официальной редакции"
+    ]
+  },
+  {
+    "id": "gost_6033_80",
+    "designation": "ГОСТ 6033-80",
+    "titleRu": "Основные нормы взаимозаменяемости. Соединения шлицевые эвольвентные с углом профиля 30°. Размеры, допуски и измеряемые величины",
+    "status": "active",
+    "effectiveFrom": "1982-01-01",
+    "effectiveTo": null,
+    "replaces": [],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost6033",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Эвольвентные шлицевые соединения 30°",
+    "notes": [
+      "Имеет изменения; измерительные таблицы требуют официального импорта"
+    ]
+  },
+  {
+    "id": "gost_25346_2013",
+    "designation": "ГОСТ 25346-2013",
+    "titleRu": "Система допусков на линейные размеры. Основные положения, допуски, отклонения и посадки",
+    "status": "active",
+    "effectiveFrom": "2015-07-01",
+    "effectiveTo": null,
+    "replaces": [],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost25346",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Общие положения системы допусков и посадок, ISO 286-1:2010",
+    "notes": [
+      "Зарегистрирована поправка 2021 года"
+    ]
+  },
+  {
+    "id": "gost_25347_2013",
+    "designation": "ГОСТ 25347-2013",
+    "titleRu": "Система допусков на линейные размеры. Ряды допусков, предельные отклонения отверстий и валов",
+    "status": "active",
+    "effectiveFrom": "2015-07-01",
+    "effectiveTo": null,
+    "replaces": [],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost25347",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Таблицы IT и фундаментальных отклонений, ISO 286-2:2010",
+    "notes": [
+      "Есть поправки, включая зарегистрированную в 2025 году"
+    ]
+  },
+  {
+    "id": "gost_4543_2016",
+    "designation": "ГОСТ 4543-2016",
+    "titleRu": "Металлопродукция из конструкционной легированной стали. Технические условия",
+    "status": "active",
+    "effectiveFrom": "2017-10-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 4543-71"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost4543",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Конструкционные легированные стали после термообработки",
+    "notes": [
+      "Поправка ИУС 1-2022"
+    ]
+  },
+  {
+    "id": "gost_5632_2014",
+    "designation": "ГОСТ 5632-2014",
+    "titleRu": "Нержавеющие стали и сплавы коррозионно-стойкие, жаростойкие и жаропрочные. Марки",
+    "status": "active",
+    "effectiveFrom": "2015-01-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 5632-72"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost5632",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Марки нержавеющих и жаропрочных сталей и сплавов",
+    "notes": [
+      "Изменение №1 и поправка"
+    ]
+  },
+  {
+    "id": "gost_19281_2014",
+    "designation": "ГОСТ 19281-2014",
+    "titleRu": "Прокат повышенной прочности. Общие технические условия",
+    "status": "active",
+    "effectiveFrom": "2015-01-01",
+    "effectiveTo": "2026-11-30",
+    "replaces": [
+      "ГОСТ 19281-89"
+    ],
+    "replacedBy": [
+      "ГОСТ 19281-2025"
+    ],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost19281_2014",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Прокат повышенной прочности для сварных, клёпаных и болтовых конструкций",
+    "notes": [
+      "Будет заменён 01.12.2026"
+    ]
+  },
+  {
+    "id": "gost_19281_2025",
+    "designation": "ГОСТ 19281-2025",
+    "titleRu": "Прокат повышенной прочности. Общие технические условия",
+    "status": "accepted_future",
+    "effectiveFrom": "2026-12-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 19281-2014"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost19281_2025",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Будущая редакция проката повышенной прочности",
+    "notes": [
+      "Принят; до 01.12.2026 не считать действующим по умолчанию"
+    ]
+  },
+  {
+    "id": "gost_19903_2015",
+    "designation": "ГОСТ 19903-2015",
+    "titleRu": "Прокат листовой горячекатаный. Сортамент",
+    "status": "active",
+    "effectiveFrom": "2016-09-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 19903-74"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost19903",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Листы шириной от 500 мм, толщины и предельные отклонения",
+    "notes": [
+      "Поправка ИУС 1-2022"
+    ]
+  },
+  {
+    "id": "gost_2590_2006",
+    "designation": "ГОСТ 2590-2006",
+    "titleRu": "Прокат сортовой стальной горячекатаный круглый. Сортамент",
+    "status": "active",
+    "effectiveFrom": "2009-07-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 2590-88"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost2590",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Круглый горячекатаный прокат диаметром 5–270 мм",
+    "notes": []
+  },
+  {
+    "id": "gost_8509_93",
+    "designation": "ГОСТ 8509-93",
+    "titleRu": "Уголки стальные горячекатаные равнополочные. Сортамент",
+    "status": "active",
+    "effectiveFrom": "1997-01-01",
+    "effectiveTo": "2027-03-31",
+    "replaces": [
+      "ГОСТ 8509-86"
+    ],
+    "replacedBy": [
+      "ГОСТ 8509-2026"
+    ],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost8509_93",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Равнополочные горячекатаные уголки",
+    "notes": [
+      "Будущая замена допускает досрочное применение"
+    ]
+  },
+  {
+    "id": "gost_8509_2026",
+    "designation": "ГОСТ 8509-2026",
+    "titleRu": "Уголки стальные горячекатаные равнополочные. Сортамент",
+    "status": "accepted_future",
+    "effectiveFrom": "2027-04-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 8509-93"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": true,
+    "sourceId": "rst.gost8509_2026",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Новая редакция сортамента равнополочных уголков",
+    "notes": [
+      "Принят с правом досрочного применения"
+    ]
+  },
+  {
+    "id": "gost_8240_2026",
+    "designation": "ГОСТ 8240-2026",
+    "titleRu": "Швеллеры стальные горячекатаные. Сортамент",
+    "status": "accepted_future",
+    "effectiveFrom": "2027-04-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 8240-97"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": true,
+    "sourceId": "rst.gost8240_2026",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Швеллеры высотой 50–400 мм",
+    "notes": [
+      "Принят с правом досрочного применения"
+    ]
+  },
+  {
+    "id": "gost_26020_83",
+    "designation": "ГОСТ 26020-83",
+    "titleRu": "Двутавры стальные горячекатаные с параллельными гранями полок. Сортамент",
+    "status": "withdrawn_rf",
+    "effectiveFrom": "1986-01-01",
+    "effectiveTo": null,
+    "replaces": [],
+    "replacedBy": [
+      "ГОСТ Р 57837-2017"
+    ],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost26020",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Старый сортамент двутавров",
+    "notes": [
+      "Утратил силу в РФ; портал указывает применять ГОСТ Р 57837-2017"
+    ]
+  },
+  {
+    "id": "gost_2789_73",
+    "designation": "ГОСТ 2789-73",
+    "titleRu": "Шероховатость поверхности. Параметры и характеристики",
+    "status": "active",
+    "effectiveFrom": "1975-01-01",
+    "effectiveTo": null,
+    "replaces": [
+      "ГОСТ 2789-59"
+    ],
+    "replacedBy": [],
+    "earlyApplicationAllowed": false,
+    "sourceId": "rst.gost2789",
+    "verifiedAsOf": "2026-08-04",
+    "scope": "Параметры и характеристики шероховатости",
+    "notes": [
+      "Портал также указывает применение ГОСТ Р 71448-2024 на территории РФ; требуется юридическая трактовка и актуализация модуля"
+    ]
+  }
+]
