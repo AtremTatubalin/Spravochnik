@@ -1,0 +1,74 @@
+[
+  {
+    "id": "bearing_6005",
+    "designation": "6005",
+    "bearingType": "deep_groove_ball_single_row",
+    "dimensionsMm": {
+      "d": 25,
+      "D": 47,
+      "B": 12
+    },
+    "ratings": {
+      "C_N": null,
+      "C0_N": null,
+      "massKg": null
+    },
+    "variant": null,
+    "sourceId": "skf.catalog.rolling",
+    "verificationStatus": "verified_open_data"
+  },
+  {
+    "id": "bearing_6205",
+    "designation": "6205",
+    "bearingType": "deep_groove_ball_single_row",
+    "dimensionsMm": {
+      "d": 25,
+      "D": 52,
+      "B": 15
+    },
+    "ratings": {
+      "C_N": 14800,
+      "C0_N": 7800,
+      "massKg": 0.13
+    },
+    "variant": null,
+    "sourceId": "skf.catalog.rolling",
+    "verificationStatus": "verified_open_data"
+  },
+  {
+    "id": "bearing_6206_rz",
+    "designation": "6206-RZ",
+    "bearingType": "deep_groove_ball_single_row",
+    "dimensionsMm": {
+      "d": 30,
+      "D": 62,
+      "B": 16
+    },
+    "ratings": {
+      "C_N": 20300,
+      "C0_N": null,
+      "massKg": null
+    },
+    "variant": "RZ",
+    "sourceId": "skf.catalog.rolling",
+    "verificationStatus": "verified_open_data"
+  },
+  {
+    "id": "bearing_6305",
+    "designation": "6305",
+    "bearingType": "deep_groove_ball_single_row",
+    "dimensionsMm": {
+      "d": 25,
+      "D": 62,
+      "B": 17
+    },
+    "ratings": {
+      "C_N": null,
+      "C0_N": null,
+      "massKg": null
+    },
+    "variant": null,
+    "sourceId": "skf.catalog.rolling",
+    "verificationStatus": "verified_open_data"
+  }
+]
