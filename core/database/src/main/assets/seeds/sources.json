@@ -1,0 +1,182 @@
+[
+  {
+    "sourceId": "android.architecture",
+    "title": "Android Developers: Guide to app architecture",
+    "sourceType": "official_documentation",
+    "url": "https://developer.android.com/topic/architecture",
+    "edition": null,
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "android.offline_first",
+    "title": "Android Developers: Build an offline-first app",
+    "sourceType": "official_documentation",
+    "url": "https://developer.android.com/topic/architecture/data-layer/offline-first",
+    "edition": null,
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "android.room",
+    "title": "Android Developers: Save data in a local database using Room",
+    "sourceType": "official_documentation",
+    "url": "https://developer.android.com/training/data-storage/room",
+    "edition": null,
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "skf.bearing_life",
+    "title": "SKF: Bearing life",
+    "sourceType": "manufacturer_catalog",
+    "url": "https://www.skf.com/us/products/thin-section-bearings/introduction-thin-section/bearing-load-and-life/bearing-life",
+    "edition": null,
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "verified_open_data"
+  },
+  {
+    "sourceId": "skf.catalog.rolling",
+    "title": "SKF rolling bearings catalogue",
+    "sourceType": "manufacturer_catalog",
+    "url": "https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf",
+    "edition": "catalogue",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "verified_open_data"
+  },
+  {
+    "sourceId": "rst.gost1139",
+    "title": "ГОСТ 1139-80",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/999bf5cf-e2c4-4f00-a269-8f7153094a95",
+    "edition": "ГОСТ 1139-80",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost6033",
+    "title": "ГОСТ 6033-80",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/6a162eb2-6ea0-4f72-9b1c-04f7cfda71a8",
+    "edition": "ГОСТ 6033-80",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost25346",
+    "title": "ГОСТ 25346-2013",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/ec4c69c8-6451-4b9e-91cb-f6c6787e1f34",
+    "edition": "ГОСТ 25346-2013",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost25347",
+    "title": "ГОСТ 25347-2013",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/e7108332-b720-423a-b99b-e580aa386c7a",
+    "edition": "ГОСТ 25347-2013",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost4543",
+    "title": "ГОСТ 4543-2016",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/c92d1dfe-647b-4048-9f69-400b4bf98888",
+    "edition": "ГОСТ 4543-2016",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost5632",
+    "title": "ГОСТ 5632-2014",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/d6ac3954-d07e-4a10-a038-f3ab9b1d5b7b",
+    "edition": "ГОСТ 5632-2014",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost19281_2014",
+    "title": "ГОСТ 19281-2014",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/70f2c2d1-8390-4c37-840c-735e0654f3e2",
+    "edition": "ГОСТ 19281-2014",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost19281_2025",
+    "title": "ГОСТ 19281-2025",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/285c2ff3-99d2-4255-9ea6-6c9fb32c3c21",
+    "edition": "ГОСТ 19281-2025",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost19903",
+    "title": "ГОСТ 19903-2015",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/4c481bc9-0ed8-4b4e-8c10-b1faf216d295",
+    "edition": "ГОСТ 19903-2015",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost2590",
+    "title": "ГОСТ 2590-2006",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/7fd65c10-9efc-4274-bc97-09b7100dd766",
+    "edition": "ГОСТ 2590-2006",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost8509_93",
+    "title": "ГОСТ 8509-93",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/c12253e4-5eaa-4175-a644-9ee4b3c1c948",
+    "edition": "ГОСТ 8509-93",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost8509_2026",
+    "title": "ГОСТ 8509-2026",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/ad952c30-b4b4-4ec0-8947-c8aea3b9a062",
+    "edition": "ГОСТ 8509-2026",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost8240_2026",
+    "title": "ГОСТ 8240-2026",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/3434a317-0a9a-44d3-8300-e8e2f634f285",
+    "edition": "ГОСТ 8240-2026",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost26020",
+    "title": "ГОСТ 26020-83",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/8171521b-5a9e-42cd-9664-73de91d733a8",
+    "edition": "ГОСТ 26020-83",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  },
+  {
+    "sourceId": "rst.gost2789",
+    "title": "ГОСТ 2789-73",
+    "sourceType": "official_standard_registry",
+    "url": "https://protect.gost.ru/gost/details/ed6d3681-23f6-4f32-94c9-22ae46bdc936",
+    "edition": "ГОСТ 2789-73",
+    "accessedAt": "2026-08-04",
+    "verificationStatus": "official_metadata"
+  }
+]

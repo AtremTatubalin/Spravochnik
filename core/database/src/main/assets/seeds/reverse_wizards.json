@@ -1,0 +1,261 @@
+[
+  {
+    "id": "bearing_by_dimensions",
+    "titleRu": "Подбор подшипника по размерам",
+    "measurements": [
+      {
+        "key": "d",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "D",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "B",
+        "unit": "mm",
+        "weight": 0.9,
+        "required": true
+      },
+      {
+        "key": "type",
+        "unit": "enum",
+        "weight": 0.8,
+        "required": false
+      },
+      {
+        "key": "seal",
+        "unit": "enum",
+        "weight": 0.5,
+        "required": false
+      }
+    ],
+    "candidateProvider": "database_tolerance",
+    "scoring": {
+      "mode": "normalized_absolute_error",
+      "defaultToleranceMm": 0.15,
+      "exactBonus": 0.25
+    },
+    "stopConditions": [
+      "no_candidates",
+      "single_exact_candidate"
+    ],
+    "warnings": [
+      "Измерять очищенную деталь; ширина может включать выступающее уплотнение"
+    ]
+  },
+  {
+    "id": "metric_thread",
+    "titleRu": "Определение метрической резьбы",
+    "measurements": [
+      {
+        "key": "majorDiameter",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "pitch",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "internalExternal",
+        "unit": "enum",
+        "weight": 0.8,
+        "required": true
+      },
+      {
+        "key": "hand",
+        "unit": "enum",
+        "weight": 0.4,
+        "required": false
+      }
+    ],
+    "candidateProvider": "standard_table",
+    "scoring": {
+      "mode": "measurement_uncertainty",
+      "wearPenalty": 0.15
+    },
+    "stopConditions": [
+      "requires_standard_table"
+    ],
+    "warnings": [
+      "Наружный диаметр наружной резьбы может быть меньше номинала"
+    ]
+  },
+  {
+    "id": "straight_spline",
+    "titleRu": "Определение прямобочного шлица",
+    "measurements": [
+      {
+        "key": "z",
+        "unit": "count",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "D",
+        "unit": "mm",
+        "weight": 0.9,
+        "required": true
+      },
+      {
+        "key": "d",
+        "unit": "mm",
+        "weight": 0.9,
+        "required": true
+      },
+      {
+        "key": "b",
+        "unit": "mm",
+        "weight": 0.8,
+        "required": false
+      },
+      {
+        "key": "centering",
+        "unit": "enum",
+        "weight": 0.7,
+        "required": false
+      }
+    ],
+    "candidateProvider": "standard_table",
+    "scoring": {
+      "mode": "table_match_with_uncertainty",
+      "wearAdjustedFields": [
+        "D",
+        "d"
+      ]
+    },
+    "stopConditions": [
+      "requires_standard_table"
+    ],
+    "warnings": [
+      "Таблица ГОСТ 1139-80 должна быть импортирована из официальной редакции"
+    ]
+  },
+  {
+    "id": "involute_spline",
+    "titleRu": "Определение эвольвентного шлица",
+    "measurements": [
+      {
+        "key": "z",
+        "unit": "count",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "majorDiameter",
+        "unit": "mm",
+        "weight": 0.6,
+        "required": true
+      },
+      {
+        "key": "minorDiameter",
+        "unit": "mm",
+        "weight": 0.6,
+        "required": false
+      },
+      {
+        "key": "measurementOverPins",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": false
+      },
+      {
+        "key": "pinDiameter",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": false
+      },
+      {
+        "key": "baseTangentLength",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": false
+      }
+    ],
+    "candidateProvider": "standard_table",
+    "scoring": {
+      "mode": "table_match_with_uncertainty",
+      "preferredFields": [
+        "measurementOverPins",
+        "baseTangentLength"
+      ]
+    },
+    "stopConditions": [
+      "requires_standard_table"
+    ],
+    "warnings": [
+      "Не определять модуль только по наружному диаметру изношенного шлица"
+    ]
+  },
+  {
+    "id": "cylindrical_gear",
+    "titleRu": "Определение цилиндрического зубчатого колеса",
+    "measurements": [
+      {
+        "key": "z",
+        "unit": "count",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "key": "outsideDiameter",
+        "unit": "mm",
+        "weight": 0.5,
+        "required": true
+      },
+      {
+        "key": "rootDiameter",
+        "unit": "mm",
+        "weight": 0.4,
+        "required": false
+      },
+      {
+        "key": "baseTangentLength",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": false
+      },
+      {
+        "key": "teethSpanned",
+        "unit": "count",
+        "weight": 1.0,
+        "required": false
+      },
+      {
+        "key": "helixAngle",
+        "unit": "deg",
+        "weight": 0.8,
+        "required": false
+      },
+      {
+        "key": "centerDistance",
+        "unit": "mm",
+        "weight": 1.0,
+        "required": false
+      }
+    ],
+    "candidateProvider": "formula_candidates",
+    "scoring": {
+      "mode": "candidate_module_series",
+      "outsideDiameterWearPenalty": 0.25,
+      "confirmationFields": [
+        "baseTangentLength",
+        "centerDistance"
+      ]
+    },
+    "stopConditions": [
+      "candidate_confidence_below_threshold"
+    ],
+    "warnings": [
+      "Оценка m=da/(z+2) действительна только как стартовый кандидат стандартного несмещённого прямозубого колеса"
+    ]
+  }
+]
