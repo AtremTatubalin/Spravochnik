@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bearing.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "designation",
+    "bearingType",
+    "dimensionsMm",
+    "sourceId",
+    "verificationStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "bearingType": {
+      "type": "string"
+    },
+    "dimensionsMm": {
+      "type": "object",
+      "required": [
+        "d",
+        "D",
+        "B"
+      ],
+      "properties": {
+        "d": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "D": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "B": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "ratings": {
+      "type": "object",
+      "properties": {
+        "C_N": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "C0_N": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "massKg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "variant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "verificationStatus": {
+      "enum": [
+        "verified_open_data",
+        "manual_verified",
+        "draft"
+      ]
+    }
+  }
+}

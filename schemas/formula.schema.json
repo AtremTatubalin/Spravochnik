@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "formula.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "titleRu",
+    "classification",
+    "expression",
+    "inputs",
+    "outputs",
+    "reviewStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "titleRu": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": [
+        "physics_verified",
+        "manufacturer_method",
+        "standard_table_required",
+        "preliminary_only",
+        "blocked_for_safety"
+      ]
+    },
+    "expression": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewStatus": {
+      "enum": [
+        "automatic",
+        "requires_engineer_review",
+        "requires_standard_table",
+        "blocked"
+      ]
+    }
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "path": "AGENTS.md",
+    "bytes": 786,
+    "sha256": "a3f3faecceb48f439d1812797ace2bc9cf7efa720c60a4f875814ac5eba70dad"
+  },
+  {
+    "path": "INSTRUCTIONS_FOR_USER.md",
+    "bytes": 2011,
+    "sha256": "f5748f00dc5709e368058fc036e3fcc288c8e36c172c51ce32d7a3fc32d2fc8b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3048,
+    "sha256": "9bbdc443c7ea03b3be2ddd8e906438deaa66d68049e5ba90e52c144623cf1038"
+  },
+  {
+    "path": "android_templates/core-formulas/src/main/kotlin/ru/constructor/handbook/formulas/BearingLifeCalculator.kt",
+    "bytes": 2174,
+    "sha256": "4ea3a0099d15517cc71bf1f98f7077b9146fd9c1265d51d9e93cb98db4771cf2"
+  },
+  {
+    "path": "android_templates/core-formulas/src/main/kotlin/ru/constructor/handbook/formulas/FormulaApi.kt",
+    "bytes": 997,
+    "sha256": "a059a1f285ac6c0f997943f7d0416f94b60253958f4982b5b4d4dc5d45359e23"
+  },
+  {
+    "path": "android_templates/core-formulas/src/main/kotlin/ru/constructor/handbook/formulas/SolidShaftTorsionCalculator.kt",
+    "bytes": 1799,
+    "sha256": "7b179460e334ebdd40d7d5d993ef103038ce0d39c5896479d48988e9e819b03c"
+  },
+  {
+    "path": "android_templates/core-formulas/src/main/kotlin/ru/constructor/handbook/formulas/SpurGearGeometryCalculator.kt",
+    "bytes": 1708,
+    "sha256": "4b842ec9702ae7cf23b5aa0a2c41b746a576f045790912d12529be608a73d63a"
+  },
+  {
+    "path": "android_templates/core-formulas/src/test/kotlin/ru/constructor/handbook/formulas/BearingLifeCalculatorTest.kt",
+    "bytes": 425,
+    "sha256": "19296e53a0713db37954795044e0bbff796d789bcdb7525531a9d5409cdd4cd3"
+  },
+  {
+    "path": "data/MISSING_DATA_REGISTER.csv",
+    "bytes": 1956,
+    "sha256": "02b03d62b4a08ce75d291dabb90a14d889cecb4d68c75cfe5b4176fa71a8ef8b"
+  },
+  {
+    "path": "data/import_templates/bearings.csv",
+    "bytes": 103,
+    "sha256": "ff0bdde3162bc84d8b6fba2f260a021c04483fb4ae1ae58fef26a359a4a2d7ca"
+  },
+  {
+    "path": "data/import_templates/material_properties.csv",
+    "bytes": 187,
+    "sha256": "26b26cb234bf9e1afc4431d4a9b50477830556cbb4d2dfe2247a21fcbe3787a8"
+  },
+  {
+    "path": "data/import_templates/profile_sizes.csv",
+    "bytes": 132,
+    "sha256": "f4ea14cc9094f92892df1303f53685842261e5f6c4e5cdb31ba85a6b4d76b7f7"
+  },
+  {
+    "path": "data/import_templates/spline_rows.csv",
+    "bytes": 162,
+    "sha256": "0e53fe2d0a2a077358def710e30265a379e07a28e46de4b61f5cc0b36c82fd67"
+  },
+  {
+    "path": "data/import_templates/tolerance_values.csv",
+    "bytes": 104,
+    "sha256": "7c0ac079bfa76fadbc6df988aaabfc51df44bd8ab530f994ac23e5cb776518c2"
+  },
+  {
+    "path": "data/seeds/bearings.json",
+    "bytes": 1515,
+    "sha256": "eacdd5f7f6429ea0cf70606571be822e25aa41890ccdc6ec51538bd8fe281a81"
+  },
+  {
+    "path": "data/seeds/formulas.json",
+    "bytes": 37187,
+    "sha256": "9d7a909785ef3916a9b79a751a06a38d33a868710a18b862c7dbfaa12bb585a7"
+  },
+  {
+    "path": "data/seeds/manifest.json",
+    "bytes": 903,
+    "sha256": "02bbef2afbac6e7e3a8e3758a4fb165d37b34f3a68d8d45cc4f0d56ebca96125"
+  },
+  {
+    "path": "data/seeds/materials.json",
+    "bytes": 8588,
+    "sha256": "49f626f8a074f3c7ce089b5e22534c6fb3a392655d8e0bc5d0b2022f3931e8aa"
+  },
+  {
+    "path": "data/seeds/profile_families.json",
+    "bytes": 1051,
+    "sha256": "92e40f848c84691eb64f67fbb10c97f1d0ca7c5d9bbd07527faf328142fab96f"
+  },
+  {
+    "path": "data/seeds/reverse_wizards.json",
+    "bytes": 6004,
+    "sha256": "b4f17a15c78fb5e2557e08ff08863be0fa2c2972f1b018ae4c51740f4b0ae081"
+  },
+  {
+    "path": "data/seeds/sources.json",
+    "bytes": 6637,
+    "sha256": "a322bb02cc0f26edac2ff0a891f4fc34bafbdad410e10437f252ce7ae2512586"
+  },
+  {
+    "path": "data/seeds/standards.json",
+    "bytes": 10487,
+    "sha256": "932cd98c6ade82c0923fd8424832aaed6fbf72de47ce715e92ac6ce67a098997"
+  },
+  {
+    "path": "database/reference_seed.sqlite",
+    "bytes": 372736,
+    "sha256": "e2870a98c1ca6f728c87cbc175aedf2ac7e58fe54b731fb6457fbf57fc22d3dc"
+  },
+  {
+    "path": "database/schema.sql",
+    "bytes": 8511,
+    "sha256": "d14a1a3a12139eedbfaff8efaf5024c77981c5910b03bf4869b918ea8fe04dce"
+  },
+  {
+    "path": "docs/00_SCOPE_AND_STATUS.md",
+    "bytes": 2769,
+    "sha256": "6ae53029df19a448545ea1dfce5aeb09b5e7eb1abfe37dcfaa23c114b4a2a095"
+  },
+  {
+    "path": "docs/01_PRODUCT_ARCHITECTURE.md",
+    "bytes": 2799,
+    "sha256": "3d14d729ae5888e1083773f89bd32e386f19995449b8013be414c0c0f3f3709c"
+  },
+  {
+    "path": "docs/02_TECHNICAL_ARCHITECTURE.md",
+    "bytes": 2663,
+    "sha256": "fcbba42c426d26ebc6fc47a2bc83c6735d18345057bec17e22c8c7514cb9b76f"
+  },
+  {
+    "path": "docs/03_DATABASE_MODEL.md",
+    "bytes": 3005,
+    "sha256": "dfee2797e3180a5e67e2a9673d91bd9a864b00c04173a660b0b2442d6458fa0c"
+  },
+  {
+    "path": "docs/04_REFERENCE_BASE_PLAN.md",
+    "bytes": 2554,
+    "sha256": "c9813a416abd01afe9e759cf561bec699915f577e8de5e6327135b590d8b06fb"
+  },
+  {
+    "path": "docs/05_FORMULA_CATALOG.md",
+    "bytes": 2900,
+    "sha256": "e903f07995328e05ef17b32179574cb2d7a4a1d9b66e776068b15d771b01037b"
+  },
+  {
+    "path": "docs/06_DATA_DIGITIZATION.md",
+    "bytes": 2788,
+    "sha256": "30514efbb58a4d851215148e55d27cabff323dddaac291108cddf42b0874f552"
+  },
+  {
+    "path": "docs/07_REVERSE_ENGINEERING.md",
+    "bytes": 3133,
+    "sha256": "8ee842353ffea33148caeaef0101f3ee0c12d2f936d3540077cf68829dc9f813"
+  },
+  {
+    "path": "docs/08_DARK_CAD_DESIGN_SYSTEM.md",
+    "bytes": 2058,
+    "sha256": "c26ea43be4e9ceb8ba901c868a891acb2803da15bb1cf50b2f2a9c746a580611"
+  },
+  {
+    "path": "docs/09_DEVELOPMENT_ROADMAP.md",
+    "bytes": 1859,
+    "sha256": "1eb9ba68878d804af12adb0e0140b52197c423867920111b27f268b8880e0b95"
+  },
+  {
+    "path": "docs/10_SOURCE_REGISTER.md",
+    "bytes": 1890,
+    "sha256": "7f93ef8276def002930fac02ae85c76ca3d2bf226712d8705044be46567bad78"
+  },
+  {
+    "path": "docs/11_DATA_COMPLETION_MATRIX.md",
+    "bytes": 1695,
+    "sha256": "c32d6518205697c827901c53a7de71dfc071101d74842af2c3202f4a257b60fa"
+  },
+  {
+    "path": "docs/assets/dark_cad_ui_reference.png",
+    "bytes": 1760986,
+    "sha256": "5fd7ee18036b2a3d3865fe2f0ccc8038b72d5d1a34e551fa04a3d6553e1dea2e"
+  },
+  {
+    "path": "prompts/00_MASTER_CODEX_PROMPT.md",
+    "bytes": 2603,
+    "sha256": "f3d36c746c49407323ac02de03633fab65dc2d4f3414ae7e6a2c1dfa4e43aaba"
+  },
+  {
+    "path": "prompts/01_REPOSITORY_BOOTSTRAP.md",
+    "bytes": 513,
+    "sha256": "2faea571a77b4baf58b31541fe3738a3da224ef37552c5499847572edba59f98"
+  },
+  {
+    "path": "prompts/02_DATABASE_AND_IMPORT.md",
+    "bytes": 451,
+    "sha256": "b094a5eba6cfbedc68939fc2a13ea4cf8cac5db7bacac6e89377975c11965987"
+  },
+  {
+    "path": "prompts/03_HOME_SEARCH_PROJECTS.md",
+    "bytes": 342,
+    "sha256": "7ab2300a02124d4e9ab51a3c6c43060020bac3626865019b615fa452cc91f918"
+  },
+  {
+    "path": "prompts/04_REFERENCE_MODULES.md",
+    "bytes": 391,
+    "sha256": "63d103356e33931674dcfb7ef0fc7d84f9dee7cff20d0819c909a8706738b0ab"
+  },
+  {
+    "path": "prompts/05_FORMULA_ENGINE.md",
+    "bytes": 490,
+    "sha256": "fc92dc5be3e21ca13f03f6967d801f6fbd55a18df12ffe042177e68d59b6f8c2"
+  },
+  {
+    "path": "prompts/06_PRELIMINARY_CONNECTION_CALCULATORS.md",
+    "bytes": 370,
+    "sha256": "ad680c38579795a4e56078e13e0ed6563928faf9e3e235f9b9c23f4a076c9128"
+  },
+  {
+    "path": "prompts/07_REVERSE_ENGINEERING.md",
+    "bytes": 396,
+    "sha256": "1c5895d75d801fd797af3b1f35eaee478688accaa80780a94f4018127424f7f1"
+  },
+  {
+    "path": "prompts/08_REPORTS_AND_RELEASE.md",
+    "bytes": 363,
+    "sha256": "00673f2a23d1e19b2f739db6246c7c9e9dea2b0cb44de876c6c8db1b25108fa8"
+  },
+  {
+    "path": "schemas/bearing.schema.json",
+    "bytes": 1464,
+    "sha256": "87f99894155a295cf58b872b19dcebfc320ef24048120a152a7075ef5fdf16a9"
+  },
+  {
+    "path": "schemas/formula.schema.json",
+    "bytes": 1404,
+    "sha256": "bf489f90be89543b28d78979f70034f7839042d9e0e5b70defd26f9cc1e832a7"
+  },
+  {
+    "path": "schemas/material.schema.json",
+    "bytes": 2647,
+    "sha256": "5b8bf102c1eecec36d8e8020fcb5d3aabde0a10890d0ab4736ed70a739ed23c7"
+  },
+  {
+    "path": "schemas/reverse_wizard.schema.json",
+    "bytes": 859,
+    "sha256": "3b945abe3e76cc8b264a83c93f0bb7252ea4fb71f40a2a1138fadafad108e580"
+  },
+  {
+    "path": "schemas/source.schema.json",
+    "bytes": 1001,
+    "sha256": "850e509eda75084f9e52e243cea55fa2df8f34c2821a846beb175355c4777bac"
+  },
+  {
+    "path": "schemas/standard.schema.json",
+    "bytes": 1327,
+    "sha256": "0a9362557c54f9b52a01406f4444961b54b2cd7bcbb3be49fe48091de3da7398"
+  },
+  {
+    "path": "scripts/check_reference_examples.py",
+    "bytes": 533,
+    "sha256": "6522b00658566df33cde5b73b80505e9659f73e1eedf0345a7cb87490feb1713"
+  },
+  {
+    "path": "scripts/validate_package.py",
+    "bytes": 1745,
+    "sha256": "86f459f15896c178e0e75788ecbdace9246694b7ad3f7cd83c66bb4b9bb691ee"
+  }
+]

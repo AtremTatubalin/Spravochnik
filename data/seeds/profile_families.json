@@ -1,0 +1,43 @@
+[
+  {
+    "id": "round_hot_rolled",
+    "titleRu": "Круг горячекатаный",
+    "standardIds": [
+      "gost_2590_2006"
+    ],
+    "dimensionTableStatus": "licensed_table_required"
+  },
+  {
+    "id": "sheet_hot_rolled",
+    "titleRu": "Лист горячекатаный",
+    "standardIds": [
+      "gost_19903_2015"
+    ],
+    "dimensionTableStatus": "licensed_table_required"
+  },
+  {
+    "id": "equal_angle",
+    "titleRu": "Уголок равнополочный",
+    "standardIds": [
+      "gost_8509_93",
+      "gost_8509_2026"
+    ],
+    "dimensionTableStatus": "licensed_table_required"
+  },
+  {
+    "id": "channel",
+    "titleRu": "Швеллер горячекатаный",
+    "standardIds": [
+      "gost_8240_2026"
+    ],
+    "dimensionTableStatus": "licensed_table_required"
+  },
+  {
+    "id": "parallel_flange_ibeam",
+    "titleRu": "Двутавр с параллельными гранями полок",
+    "standardIds": [
+      "gost_26020_83"
+    ],
+    "dimensionTableStatus": "replace_source_required"
+  }
+]

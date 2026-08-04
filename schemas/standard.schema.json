@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "standard.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "designation",
+    "titleRu",
+    "status",
+    "sourceId",
+    "verifiedAsOf"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "titleRu": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "accepted_future",
+        "replaced",
+        "withdrawn_rf",
+        "unknown"
+      ]
+    },
+    "effectiveFrom": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "effectiveTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "replaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "replacedBy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "earlyApplicationAllowed": {
+      "type": "boolean"
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "verifiedAsOf": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

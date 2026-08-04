@@ -1,0 +1,11 @@
+priority,dataset,required_source,scope,status,blocking_features
+A,tolerance_values,ГОСТ 25346-2013 и ГОСТ 25347-2013,IT5-IT14 и основные отклонения,licensed_table_required,калькулятор посадок
+A,straight_splines,ГОСТ 1139-80 со всеми изменениями,ряды размеров и допусков,licensed_table_required,определение прямобочного шлица
+A,involute_splines,ГОСТ 6033-80 со всеми изменениями,модули допуски измеряемые величины,licensed_table_required,определение эвольвентного шлица
+A,bearings,официальные каталоги SKF NSK FAG и др.,типоразмеры рейтинги коэффициенты,manufacturer_import_required,подбор и ресурс
+A,material_conditions,официальные стандарты и сертификаты,свойства по термообработке и сечению,licensed_table_required,подбор материалов
+A,metric_threads,актуальные стандарты на профиль и размеры,основной и мелкий шаг,licensed_table_required,определение резьбы
+B,fasteners,актуальные ГОСТ ISO и каталоги,болты гайки шайбы шпильки,licensed_table_required,справочник крепежа
+B,profiles,актуальные стандарты сортамента,геометрия масса Ix Iy Wx Wy,licensed_table_required,подбор профиля
+B,roughness,актуальная нормативная связка,Ra Rz обозначения и методы,legal_status_review,шероховатость
+B,gear_standards,выбранная нормативная методика,коэффициенты прочности,method_selection_required,прочность передач

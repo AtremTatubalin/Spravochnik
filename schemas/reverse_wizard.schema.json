@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reverse_wizard.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "titleRu",
+    "measurements",
+    "candidateProvider",
+    "scoring"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "titleRu": {
+      "type": "string"
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "candidateProvider": {
+      "enum": [
+        "database_exact",
+        "database_tolerance",
+        "standard_table",
+        "formula_candidates"
+      ]
+    },
+    "scoring": {
+      "type": "object"
+    },
+    "stopConditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

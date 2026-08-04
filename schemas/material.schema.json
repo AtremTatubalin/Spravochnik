@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "designation",
+    "category",
+    "verificationStatus",
+    "standardIds",
+    "conditions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string"
+    },
+    "standardIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verificationStatus": {
+      "enum": [
+        "official_metadata",
+        "verified_open_data",
+        "manual_verified",
+        "draft_structure_only"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "conditionId",
+          "label",
+          "properties"
+        ],
+        "properties": {
+          "conditionId": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "sizeRange": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "temperatureRangeC": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "properties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "property",
+                "unit",
+                "sourceId"
+              ],
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "min": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "max": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "nominal": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "sourceId": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

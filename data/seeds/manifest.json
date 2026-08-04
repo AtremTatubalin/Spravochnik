@@ -1,0 +1,43 @@
+{
+  "packageVersion": "0.1.0",
+  "schemaVersion": 1,
+  "verifiedAsOf": "2026-08-04",
+  "locale": "ru-RU",
+  "datasets": [
+    {
+      "id": "sources",
+      "file": "sources.json",
+      "status": "verified_metadata"
+    },
+    {
+      "id": "standards",
+      "file": "standards.json",
+      "status": "verified_metadata"
+    },
+    {
+      "id": "materials",
+      "file": "materials.json",
+      "status": "draft_structure_only"
+    },
+    {
+      "id": "bearings",
+      "file": "bearings.json",
+      "status": "verified_sample_only"
+    },
+    {
+      "id": "profile_families",
+      "file": "profile_families.json",
+      "status": "metadata_only"
+    },
+    {
+      "id": "formulas",
+      "file": "formulas.json",
+      "status": "mixed_see_record_classification"
+    },
+    {
+      "id": "reverse_wizards",
+      "file": "reverse_wizards.json",
+      "status": "architecture_seed"
+    }
+  ]
+}

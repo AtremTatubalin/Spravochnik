@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source.schema.json",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "title",
+    "sourceType",
+    "verificationStatus"
+  ],
+  "properties": {
+    "sourceId": {
+      "type": "string",
+      "pattern": "^[a-z0-9._-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sourceType": {
+      "enum": [
+        "official_standard_registry",
+        "licensed_standard",
+        "manufacturer_catalog",
+        "official_documentation",
+        "engineering_reference"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "edition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accessedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "verificationStatus": {
+      "enum": [
+        "official_metadata",
+        "verified_open_data",
+        "manual_verified",
+        "draft"
+      ]
+    }
+  }
+}
