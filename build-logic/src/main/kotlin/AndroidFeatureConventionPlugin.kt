@@ -20,6 +20,10 @@ public class AndroidFeatureConventionPlugin : Plugin<Project> {
             add("implementation", platform(libs.findLibrary("androidx-compose-bom").get()))
             add("implementation", libs.findLibrary("androidx-compose-ui").get())
             add("implementation", libs.findLibrary("androidx-compose-material3").get())
+            add("implementation", libs.findLibrary("androidx-activity-compose").get())
+            add("implementation", libs.findLibrary("androidx-lifecycle-viewmodel-compose").get())
+            add("testImplementation", libs.findLibrary("junit").get())
+            add("testImplementation", libs.findLibrary("kotlinx-coroutines-core").get())
             add("implementation", project(":core:ui"))
         }
     }

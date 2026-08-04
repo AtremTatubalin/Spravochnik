@@ -3,9 +3,11 @@ package ru.constructor.handbook
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.NavigationBar
-import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationRail
+import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -70,45 +72,46 @@ private fun AppShell() {
     val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
 
     Scaffold(
-        bottomBar = {
-            NavigationBar {
-                topLevelDestinations.forEach { destination ->
-                    NavigationBarItem(
-                        selected = currentRoute == destination.route,
-                        onClick = {
-                            navController.navigate(destination.route) {
-                                popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
+        content = { innerPadding ->
+            Row(Modifier.fillMaxSize().padding(innerPadding)) {
+                NavigationRail {
+                    topLevelDestinations.forEach { destination ->
+                        NavigationRailItem(
+                            selected = currentRoute == destination.route,
+                            onClick = {
+                                navController.navigate(destination.route) {
+                                    popUpTo(navController.graph.findStartDestination().id) {
+                                        saveState = true
+                                    }
+                                    launchSingleTop = true
+                                    restoreState = true
                                 }
-                                launchSingleTop = true
-                                restoreState = true
-                            }
-                        },
-                        icon = { Text(destination.marker) },
-                        label = { Text(destination.label) },
-                    )
+                            },
+                            icon = { Text(destination.marker) },
+                            label = { Text(destination.label) },
+                        )
+                    }
+                }
+                NavHost(
+                    navController = navController,
+                    startDestination = HomeRoute,
+                    modifier = Modifier.weight(1f),
+                ) {
+                    composable(HomeRoute) { HomeScreen() }
+                    composable(SearchRoute) { SearchScreen() }
+                    composable(ProjectsRoute) { ProjectsScreen() }
+                    composable(MaterialsRoute) { MaterialsScreen() }
+                    composable(BearingsRoute) { BearingsScreen() }
+                    composable(FitsRoute) { FitsScreen() }
+                    composable(ThreadsRoute) { ThreadsScreen() }
+                    composable(FastenersRoute) { FastenersScreen() }
+                    composable(ProfilesRoute) { ProfilesScreen() }
+                    composable(CalculatorsRoute) { CalculatorsScreen() }
+                    composable(ReverseRoute) { ReverseScreen() }
+                    composable(ReportsRoute) { ReportsScreen() }
+                    composable(SettingsRoute) { SettingsScreen() }
                 }
             }
         },
-    ) { innerPadding ->
-        NavHost(
-            navController = navController,
-            startDestination = HomeRoute,
-            modifier = Modifier.padding(innerPadding),
-        ) {
-            composable(HomeRoute) { HomeScreen() }
-            composable(SearchRoute) { SearchScreen() }
-            composable(ProjectsRoute) { ProjectsScreen() }
-            composable(MaterialsRoute) { MaterialsScreen() }
-            composable(BearingsRoute) { BearingsScreen() }
-            composable(FitsRoute) { FitsScreen() }
-            composable(ThreadsRoute) { ThreadsScreen() }
-            composable(FastenersRoute) { FastenersScreen() }
-            composable(ProfilesRoute) { ProfilesScreen() }
-            composable(CalculatorsRoute) { CalculatorsScreen() }
-            composable(ReverseRoute) { ReverseScreen() }
-            composable(ReportsRoute) { ReportsScreen() }
-            composable(SettingsRoute) { SettingsScreen() }
-        }
-    }
+    )
 }
