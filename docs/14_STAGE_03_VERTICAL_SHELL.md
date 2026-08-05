@@ -15,3 +15,9 @@ Unresolved normative data:
 
 - Materials, bearings and calculators are still not imported into feature search results until their supplied seed schemas are mapped without filling blank normative values.
 - Project measurements are user-entered observations only; no tolerances, material properties or safety conclusions are inferred.
+
+Stage 04 reference-card extension:
+
+- Added reusable reference cards that expose lifecycle status, source id and dataset version.
+- Added visible reference sections for standards, materials, bearings, profile families and placeholders for fits, threads and fasteners.
+- Material screens still hide mechanical properties until they can be attached to a specific material condition.

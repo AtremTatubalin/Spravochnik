@@ -25,6 +25,7 @@ public class AndroidFeatureConventionPlugin : Plugin<Project> {
             add("testImplementation", libs.findLibrary("junit").get())
             add("testImplementation", libs.findLibrary("kotlinx-coroutines-core").get())
             add("implementation", project(":core:ui"))
+            add("implementation", project(":core:reference"))
         }
     }
 }
