@@ -1,0 +1,50 @@
+{
+  "packageVersion": "0.1.0",
+  "schemaVersion": 1,
+  "verifiedAsOf": "2026-08-04",
+  "locale": "ru-RU",
+  "datasets": [
+    {
+      "id": "sources",
+      "file": "sources.json",
+      "status": "verified_metadata",
+      "sha256": "a322bb02cc0f26edac2ff0a891f4fc34bafbdad410e10437f252ce7ae2512586"
+    },
+    {
+      "id": "standards",
+      "file": "standards.json",
+      "status": "verified_metadata",
+      "sha256": "932cd98c6ade82c0923fd8424832aaed6fbf72de47ce715e92ac6ce67a098997"
+    },
+    {
+      "id": "materials",
+      "file": "materials.json",
+      "status": "draft_structure_only",
+      "sha256": "49f626f8a074f3c7ce089b5e22534c6fb3a392655d8e0bc5d0b2022f3931e8aa"
+    },
+    {
+      "id": "bearings",
+      "file": "bearings.json",
+      "status": "verified_sample_only",
+      "sha256": "eacdd5f7f6429ea0cf70606571be822e25aa41890ccdc6ec51538bd8fe281a81"
+    },
+    {
+      "id": "profile_families",
+      "file": "profile_families.json",
+      "status": "metadata_only",
+      "sha256": "92e40f848c84691eb64f67fbb10c97f1d0ca7c5d9bbd07527faf328142fab96f"
+    },
+    {
+      "id": "formulas",
+      "file": "formulas.json",
+      "status": "mixed_see_record_classification",
+      "sha256": "9d7a909785ef3916a9b79a751a06a38d33a868710a18b862c7dbfaa12bb585a7"
+    },
+    {
+      "id": "reverse_wizards",
+      "file": "reverse_wizards.json",
+      "status": "architecture_seed",
+      "sha256": "b4f17a15c78fb5e2557e08ff08863be0fa2c2972f1b018ae4c51740f4b0ae081"
+    }
+  ]
+}
