@@ -10,7 +10,7 @@ import ru.constructor.handbook.formulaapi.Quantity
 
 class ActiveFormulaRegistryTest {
     @Test fun implementsRequestedFormulaIdsWithSeedVersions() {
-        val ids = setOf("mass_rectangular_prism", "mass_solid_cylinder", "mass_hollow_cylinder", "power_torque_speed", "linear_thermal_expansion", "liquid_volume_by_density", "axial_bar", "solid_shaft_torsion", "hollow_shaft_torsion", "beam_ss_center_point", "beam_ss_udl", "beam_cantilever_end", "beam_cantilever_udl", "bearing_basic_life", "spur_gear_basic", "helical_gear_basic", "gear_forces", "belt_speed", "pressure_force_area", "flow_velocity_area", "thread_pitch_tpi", "bolt_circle_coordinates", "truncated_cone_development")
+        val ids = setOf("mass_rectangular_prism", "mass_solid_cylinder", "mass_hollow_cylinder", "power_torque_speed", "linear_thermal_expansion", "liquid_volume_by_density", "axial_bar", "solid_shaft_torsion", "hollow_shaft_torsion", "beam_ss_center_point", "beam_ss_udl", "beam_cantilever_end", "beam_cantilever_udl", "bearing_basic_life", "spur_gear_basic", "helical_gear_basic", "gear_forces", "key_preliminary", "spline_bearing_preliminary", "bolt_tension_preliminary", "bolt_direct_shear_preliminary", "fillet_weld_direct_shear", "compression_spring_basic", "belt_speed", "pressure_force_area", "flow_velocity_area", "thread_pitch_tpi", "bolt_circle_coordinates", "truncated_cone_development")
         ids.forEach { id -> assertEquals(1, ActiveFormulaRegistry.find(id)?.version) }
     }
 
@@ -39,6 +39,24 @@ class ActiveFormulaRegistryTest {
         assertTrue(success("truncated_cone_development", "D1" to q(100.0, "mm"), "D2" to q(50.0, "mm"), "s" to q(80.0, "mm"))["angle"]!!.value > 0.0)
     }
 
+    @Test fun computesPreliminaryOnlyCalculatorsAndFlagsEngineerReview() {
+        val key = response("key_preliminary", "T" to q(100.0, "N*m"), "d" to q(0.05, "m"), "b" to q(0.01, "m"), "hEff" to q(0.005, "m"), "l" to q(0.04, "m"))
+        assertEquals("requires_engineer_review", key.reviewStatus)
+        assertTrue(key.requiresEngineerReview)
+        assertTrue(key.limitations.isNotEmpty())
+        assertClose(10_000_000.0, key.output.values["tau"]!!.value)
+        assertClose(20_000_000.0, key.output.values["sigmaBearing"]!!.value)
+
+        assertClose(3_333_333.3333333335, success("spline_bearing_preliminary", "T" to q(100.0, "N*m"), "dm" to q(0.05, "m"), "zEff" to q(10.0, "-"), "h" to q(0.003, "m"), "l" to q(0.04, "m"))["p"]!!.value)
+        assertClose(50_000_000.0, success("bolt_tension_preliminary", "F" to q(10_000.0, "N"), "As" to q(2e-4, "m2"))["sigma"]!!.value)
+        assertClose(25_000_000.0, success("bolt_direct_shear_preliminary", "F" to q(10_000.0, "N"), "n" to q(2.0, "-"), "A_shear" to q(2e-4, "m2"))["tau"]!!.value)
+        assertClose(35_360_678.925035365, success("fillet_weld_direct_shear", "F" to q(10_000.0, "N"), "k" to q(0.005, "m"), "L" to q(0.08, "m"))["tau"]!!.value)
+        val spring = success("compression_spring_basic", "G" to q(80e9, "Pa"), "d" to q(0.005, "m"), "D" to q(0.05, "m"), "n" to q(8.0, "-"), "F" to q(100.0, "N"))
+        assertClose(6250.0, spring["k"]!!.value)
+        assertClose(0.016, spring["delta"]!!.value)
+        assertTrue(spring["tau"]!!.value > 0.0)
+    }
+
     @Test fun validatesDimensionsAndRequiresTables() {
         val invalid = ActiveFormulaRegistry.find("mass_solid_cylinder")!!.calculate(FormulaInput(mapOf("d" to q(0.1, "mm"), "L" to q(1.0, "m"), "rho" to q(7800.0, "kg/m3"))))
         assertTrue(invalid is CalculationResponse.Invalid)
@@ -47,9 +65,12 @@ class ActiveFormulaRegistryTest {
     }
 
     private fun success(id: String, vararg values: Pair<String, Quantity>): Map<String, Quantity> {
-        val result = (ActiveFormulaRegistry.find(id)!!.calculate(FormulaInput(values.toMap())) as CalculationResponse.Success).result
+        val result = response(id, *values)
         return result.output.values + result.intermediateValues
     }
+
+    private fun response(id: String, vararg values: Pair<String, Quantity>) =
+        (ActiveFormulaRegistry.find(id)!!.calculate(FormulaInput(values.toMap())) as CalculationResponse.Success).result
     private fun q(value: Double, unit: String) = Quantity(value, unit)
     private fun assertClose(expected: Double, actual: Double) = assertEquals(expected, actual, kotlin.math.max(1e-6, kotlin.math.abs(expected) * 1e-4))
 }

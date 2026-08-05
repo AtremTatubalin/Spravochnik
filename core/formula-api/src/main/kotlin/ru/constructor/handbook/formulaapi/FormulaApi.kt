@@ -16,7 +16,10 @@ public data class FormulaResult(
     val warnings: List<String>,
     val sourceReferences: List<String>,
     val reviewStatus: String,
-)
+) {
+    public val requiresEngineerReview: Boolean get() = reviewStatus == "requires_engineer_review"
+    public val limitations: List<String> get() = warnings
+}
 
 public data class FormulaError(val key: String, val messageRu: String)
 public sealed interface CalculationResponse {

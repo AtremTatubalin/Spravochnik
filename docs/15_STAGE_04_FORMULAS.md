@@ -25,3 +25,9 @@ Unresolved normative data:
 - `bearing_equivalent_dynamic` intentionally returns `requires_standard_table`; manufacturer-specific X/Y/e coefficients must come from a named bearing catalog dataset.
 - Gear strength, profile shifts, quality factors, application factors and material allowable stresses remain out of scope until licensed source tables are present.
 - Beam formulas are elementary analytical cases only and require engineer review for safety-critical use.
+
+Stage 04 follow-up — preliminary-only calculators:
+
+- Implemented `requires_engineer_review` formulas for key shear/bearing pressure, spline bearing pressure, bolt tension, bolt direct shear, simple fillet weld direct shear and compression spring basics.
+- These formulas intentionally return calculated stress/pressure/stiffness values only; they do not compare against allowable stresses because no verified allowable-stress datasets were supplied.
+- The calculators UI lists each preliminary-only calculator with a visible limitation statement and `requires_engineer_review` result status.
