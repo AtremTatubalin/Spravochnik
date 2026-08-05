@@ -31,6 +31,35 @@
 4. Выполнить `python scripts/validate_package.py`.
 5. Для нормативных таблиц использовать процесс из `docs/06_DATA_DIGITIZATION.md`.
 
+## Сборка Android-приложения
+
+Требуются JDK 17 и Android SDK 36. Укажите путь к SDK через `ANDROID_HOME` или
+`local.properties`, затем используйте Gradle Wrapper. При первом запуске wrapper
+загружает официальный bootstrap JAR Gradle 8.14.3 в пользовательский каталог
+`GRADLE_USER_HOME` и проверяет его SHA-256; бинарный JAR намеренно не хранится
+в репозитории:
+
+```bash
+./gradlew assembleDebug
+./gradlew test
+./gradlew lint
+```
+
+APK отладочной сборки создаётся в `app/build/outputs/apk/debug/`. Проверка
+исходного пакета данных выполняется отдельно командой
+`python scripts/validate_package.py`.
+
+Навигационная оболочка содержит только экраны-заглушки: бизнес-функции будут
+добавляться последующими этапами `prompts/02...08`.
+
+### Сборка APK на GitHub
+
+Workflow `Android CI` запускается автоматически для push и pull request. Его
+также можно запустить вручную на странице **Actions → Android CI → Run
+workflow**. После успешной сборки APK доступен внизу страницы запуска в разделе
+**Artifacts** под именем `spravochnik-debug-<commit SHA>`. Артефакт хранится 14
+дней и не добавляется в Git-репозиторий.
+
 ## Состав стартовой базы
 
 - 15 нормативных записей и будущих замен;
