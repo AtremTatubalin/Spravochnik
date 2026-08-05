@@ -1,0 +1,288 @@
+[
+  {
+    "id": "steel_st3sp",
+    "designation": "Ст3сп",
+    "aliases": [],
+    "category": "carbon_structural_ordinary",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_10",
+    "designation": "10",
+    "aliases": [],
+    "category": "carbon_quality",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_20",
+    "designation": "20",
+    "aliases": [],
+    "category": "carbon_quality",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_35",
+    "designation": "35",
+    "aliases": [],
+    "category": "carbon_quality",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_45",
+    "designation": "45",
+    "aliases": [],
+    "category": "carbon_quality",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_40kh",
+    "designation": "40Х",
+    "aliases": [
+      "40X",
+      "40Cr"
+    ],
+    "category": "alloy_structural",
+    "standardIds": [
+      "gost_4543_2016"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_20kh",
+    "designation": "20Х",
+    "aliases": [
+      "20X"
+    ],
+    "category": "alloy_structural",
+    "standardIds": [
+      "gost_4543_2016"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_30khgsa",
+    "designation": "30ХГСА",
+    "aliases": [
+      "30KhGSA"
+    ],
+    "category": "alloy_structural",
+    "standardIds": [
+      "gost_4543_2016"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_09g2s",
+    "designation": "09Г2С",
+    "aliases": [
+      "09G2S"
+    ],
+    "category": "high_strength_low_alloy",
+    "standardIds": [
+      "gost_19281_2014",
+      "gost_19281_2025"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_65g",
+    "designation": "65Г",
+    "aliases": [
+      "65G"
+    ],
+    "category": "spring_steel",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_u8a",
+    "designation": "У8А",
+    "aliases": [
+      "U8A"
+    ],
+    "category": "tool_carbon",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_kh12mf",
+    "designation": "Х12МФ",
+    "aliases": [
+      "Kh12MF"
+    ],
+    "category": "tool_alloy",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_08kh18n10",
+    "designation": "08Х18Н10",
+    "aliases": [
+      "08Kh18N10"
+    ],
+    "category": "stainless",
+    "standardIds": [
+      "gost_5632_2014"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_12kh18n10t",
+    "designation": "12Х18Н10Т",
+    "aliases": [
+      "12Kh18N10T"
+    ],
+    "category": "stainless",
+    "standardIds": [
+      "gost_5632_2014"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "steel_20kh13",
+    "designation": "20Х13",
+    "aliases": [
+      "20Kh13"
+    ],
+    "category": "stainless_martensitic",
+    "standardIds": [
+      "gost_5632_2014"
+    ],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "cast_sch20",
+    "designation": "СЧ20",
+    "aliases": [
+      "SCh20"
+    ],
+    "category": "gray_cast_iron",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "cast_sch25",
+    "designation": "СЧ25",
+    "aliases": [
+      "SCh25"
+    ],
+    "category": "gray_cast_iron",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "cast_vch40",
+    "designation": "ВЧ40",
+    "aliases": [
+      "VCh40"
+    ],
+    "category": "ductile_cast_iron",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "al_ad31",
+    "designation": "АД31",
+    "aliases": [
+      "AD31"
+    ],
+    "category": "aluminium_wrought",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  },
+  {
+    "id": "al_d16",
+    "designation": "Д16",
+    "aliases": [
+      "D16"
+    ],
+    "category": "aluminium_wrought",
+    "standardIds": [],
+    "verificationStatus": "draft_structure_only",
+    "conditions": [],
+    "notes": [
+      "Числовые свойства не заполнены: требуется импорт по состоянию, сечению и термообработке"
+    ]
+  }
+]

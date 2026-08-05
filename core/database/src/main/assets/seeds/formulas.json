@@ -1,0 +1,1612 @@
+[
+  {
+    "id": "mass_rectangular_prism",
+    "version": 1,
+    "titleRu": "Масса прямоугольного параллелепипеда",
+    "classification": "physics_verified",
+    "expression": [
+      "V=a*b*h",
+      "m=rho*V"
+    ],
+    "inputs": [
+      {
+        "key": "a",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "b",
+        "unit": "m",
+        "descriptionRu": "ширина"
+      },
+      {
+        "key": "h",
+        "unit": "m",
+        "descriptionRu": "толщина"
+      },
+      {
+        "key": "rho",
+        "unit": "kg/m3",
+        "descriptionRu": "плотность"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "V",
+        "unit": "m3",
+        "descriptionRu": "объём"
+      },
+      {
+        "key": "m",
+        "unit": "kg",
+        "descriptionRu": "масса"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "mass_solid_cylinder",
+    "version": 1,
+    "titleRu": "Масса сплошного цилиндра",
+    "classification": "physics_verified",
+    "expression": [
+      "A=pi*d^2/4",
+      "V=A*L",
+      "m=rho*V"
+    ],
+    "inputs": [
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "диаметр"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "rho",
+        "unit": "kg/m3",
+        "descriptionRu": "плотность"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "A",
+        "unit": "m2",
+        "descriptionRu": "площадь"
+      },
+      {
+        "key": "V",
+        "unit": "m3",
+        "descriptionRu": "объём"
+      },
+      {
+        "key": "m",
+        "unit": "kg",
+        "descriptionRu": "масса"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "mass_hollow_cylinder",
+    "version": 1,
+    "titleRu": "Масса полого цилиндра",
+    "classification": "physics_verified",
+    "expression": [
+      "A=pi*(D^2-d^2)/4",
+      "V=A*L",
+      "m=rho*V"
+    ],
+    "inputs": [
+      {
+        "key": "D",
+        "unit": "m",
+        "descriptionRu": "наружный диаметр"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "внутренний диаметр"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "rho",
+        "unit": "kg/m3",
+        "descriptionRu": "плотность"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "m",
+        "unit": "kg",
+        "descriptionRu": "масса"
+      }
+    ],
+    "assumptions": [
+      "D>d"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "power_torque_speed",
+    "version": 1,
+    "titleRu": "Связь мощности, момента и частоты",
+    "classification": "physics_verified",
+    "expression": [
+      "omega=2*pi*n/60",
+      "P=T*omega",
+      "T=9550*P_kW/n_rpm"
+    ],
+    "inputs": [
+      {
+        "key": "P_kW",
+        "unit": "kW",
+        "descriptionRu": "мощность"
+      },
+      {
+        "key": "n_rpm",
+        "unit": "rpm",
+        "descriptionRu": "частота"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      }
+    ],
+    "assumptions": [
+      "стационарное вращение без учёта КПД"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "linear_thermal_expansion",
+    "version": 1,
+    "titleRu": "Линейное тепловое расширение",
+    "classification": "physics_verified",
+    "expression": [
+      "deltaL=alpha*L*deltaT",
+      "L2=L+deltaL"
+    ],
+    "inputs": [
+      {
+        "key": "alpha",
+        "unit": "1/K",
+        "descriptionRu": "коэффициент"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "исходная длина"
+      },
+      {
+        "key": "deltaT",
+        "unit": "K",
+        "descriptionRu": "изменение температуры"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "deltaL",
+        "unit": "m",
+        "descriptionRu": "изменение длины"
+      },
+      {
+        "key": "L2",
+        "unit": "m",
+        "descriptionRu": "новая длина"
+      }
+    ],
+    "assumptions": [
+      "alpha постоянен в диапазоне температуры"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "liquid_volume_by_density",
+    "version": 1,
+    "titleRu": "Изменение объёма жидкости по плотности",
+    "classification": "physics_verified",
+    "expression": [
+      "m=rho1*V1",
+      "V2=m/rho2",
+      "deltaV=V2-V1"
+    ],
+    "inputs": [
+      {
+        "key": "V1",
+        "unit": "m3",
+        "descriptionRu": "начальный объём"
+      },
+      {
+        "key": "rho1",
+        "unit": "kg/m3",
+        "descriptionRu": "плотность при T1"
+      },
+      {
+        "key": "rho2",
+        "unit": "kg/m3",
+        "descriptionRu": "плотность при T2"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "V2",
+        "unit": "m3",
+        "descriptionRu": "конечный объём"
+      },
+      {
+        "key": "deltaV",
+        "unit": "m3",
+        "descriptionRu": "изменение"
+      }
+    ],
+    "assumptions": [
+      "замкнутая масса без утечки"
+    ],
+    "warnings": [
+      "Плотности должны поступать из проверенной температурной таблицы"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "axial_bar",
+    "version": 1,
+    "titleRu": "Осевое напряжение и удлинение стержня",
+    "classification": "physics_verified",
+    "expression": [
+      "sigma=F/A",
+      "deltaL=F*L/(E*A)"
+    ],
+    "inputs": [
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "сила"
+      },
+      {
+        "key": "A",
+        "unit": "m2",
+        "descriptionRu": "площадь"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "E",
+        "unit": "Pa",
+        "descriptionRu": "модуль Юнга"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "sigma",
+        "unit": "Pa",
+        "descriptionRu": "напряжение"
+      },
+      {
+        "key": "deltaL",
+        "unit": "m",
+        "descriptionRu": "удлинение"
+      }
+    ],
+    "assumptions": [
+      "линейная упругость",
+      "центральное растяжение"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "solid_shaft_torsion",
+    "version": 1,
+    "titleRu": "Кручение сплошного круглого вала",
+    "classification": "physics_verified",
+    "expression": [
+      "J=pi*d^4/32",
+      "tauMax=T*(d/2)/J=16*T/(pi*d^3)",
+      "phi=T*L/(G*J)"
+    ],
+    "inputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "диаметр"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "G",
+        "unit": "Pa",
+        "descriptionRu": "модуль сдвига"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "J",
+        "unit": "m4",
+        "descriptionRu": "полярный момент"
+      },
+      {
+        "key": "tauMax",
+        "unit": "Pa",
+        "descriptionRu": "максимальное касательное напряжение"
+      },
+      {
+        "key": "phi",
+        "unit": "rad",
+        "descriptionRu": "угол закручивания"
+      }
+    ],
+    "assumptions": [
+      "круглый призматический вал",
+      "линейная упругость"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "hollow_shaft_torsion",
+    "version": 1,
+    "titleRu": "Кручение полого круглого вала",
+    "classification": "physics_verified",
+    "expression": [
+      "J=pi*(D^4-d^4)/32",
+      "tauMax=T*(D/2)/J",
+      "phi=T*L/(G*J)"
+    ],
+    "inputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "D",
+        "unit": "m",
+        "descriptionRu": "наружный диаметр"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "внутренний диаметр"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "G",
+        "unit": "Pa",
+        "descriptionRu": "модуль сдвига"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "tauMax",
+        "unit": "Pa",
+        "descriptionRu": "напряжение"
+      },
+      {
+        "key": "phi",
+        "unit": "rad",
+        "descriptionRu": "угол"
+      }
+    ],
+    "assumptions": [
+      "D>d"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "beam_ss_center_point",
+    "version": 1,
+    "titleRu": "Шарнирная балка, сила в середине",
+    "classification": "physics_verified",
+    "expression": [
+      "R1=R2=P/2",
+      "Mmax=P*L/4",
+      "fmax=P*L^3/(48*E*I)"
+    ],
+    "inputs": [
+      {
+        "key": "P",
+        "unit": "N",
+        "descriptionRu": "сила"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "пролёт"
+      },
+      {
+        "key": "E",
+        "unit": "Pa",
+        "descriptionRu": "модуль"
+      },
+      {
+        "key": "I",
+        "unit": "m4",
+        "descriptionRu": "момент инерции"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Mmax",
+        "unit": "N*m",
+        "descriptionRu": "максимальный момент"
+      },
+      {
+        "key": "fmax",
+        "unit": "m",
+        "descriptionRu": "прогиб"
+      }
+    ],
+    "assumptions": [
+      "Эйлер–Бернулли",
+      "малые прогибы"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "beam_ss_udl",
+    "version": 1,
+    "titleRu": "Шарнирная балка, равномерная нагрузка",
+    "classification": "physics_verified",
+    "expression": [
+      "R1=R2=q*L/2",
+      "Mmax=q*L^2/8",
+      "fmax=5*q*L^4/(384*E*I)"
+    ],
+    "inputs": [
+      {
+        "key": "q",
+        "unit": "N/m",
+        "descriptionRu": "нагрузка"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "пролёт"
+      },
+      {
+        "key": "E",
+        "unit": "Pa",
+        "descriptionRu": "модуль"
+      },
+      {
+        "key": "I",
+        "unit": "m4",
+        "descriptionRu": "момент инерции"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Mmax",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "fmax",
+        "unit": "m",
+        "descriptionRu": "прогиб"
+      }
+    ],
+    "assumptions": [
+      "постоянные E и I"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "beam_cantilever_end",
+    "version": 1,
+    "titleRu": "Консоль, сила на конце",
+    "classification": "physics_verified",
+    "expression": [
+      "Mmax=P*L",
+      "fend=P*L^3/(3*E*I)"
+    ],
+    "inputs": [
+      {
+        "key": "P",
+        "unit": "N",
+        "descriptionRu": "сила"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "E",
+        "unit": "Pa",
+        "descriptionRu": "модуль"
+      },
+      {
+        "key": "I",
+        "unit": "m4",
+        "descriptionRu": "момент инерции"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Mmax",
+        "unit": "N*m",
+        "descriptionRu": "момент у заделки"
+      },
+      {
+        "key": "fend",
+        "unit": "m",
+        "descriptionRu": "прогиб конца"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "beam_cantilever_udl",
+    "version": 1,
+    "titleRu": "Консоль, равномерная нагрузка",
+    "classification": "physics_verified",
+    "expression": [
+      "Mmax=q*L^2/2",
+      "fend=q*L^4/(8*E*I)"
+    ],
+    "inputs": [
+      {
+        "key": "q",
+        "unit": "N/m",
+        "descriptionRu": "нагрузка"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "длина"
+      },
+      {
+        "key": "E",
+        "unit": "Pa",
+        "descriptionRu": "модуль"
+      },
+      {
+        "key": "I",
+        "unit": "m4",
+        "descriptionRu": "момент инерции"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Mmax",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "fend",
+        "unit": "m",
+        "descriptionRu": "прогиб"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "bearing_basic_life",
+    "version": 1,
+    "titleRu": "Базовая долговечность подшипника",
+    "classification": "manufacturer_method",
+    "expression": [
+      "L10=(C/P)^p",
+      "L10h=10^6*L10/(60*n)"
+    ],
+    "inputs": [
+      {
+        "key": "C",
+        "unit": "N",
+        "descriptionRu": "динамическая грузоподъёмность"
+      },
+      {
+        "key": "P",
+        "unit": "N",
+        "descriptionRu": "эквивалентная динамическая нагрузка"
+      },
+      {
+        "key": "p",
+        "unit": "-",
+        "descriptionRu": "3 для шариковых, 10/3 для роликовых"
+      },
+      {
+        "key": "n",
+        "unit": "rpm",
+        "descriptionRu": "частота"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "L10",
+        "unit": "million_rev",
+        "descriptionRu": "ресурс, млн оборотов"
+      },
+      {
+        "key": "L10h",
+        "unit": "h",
+        "descriptionRu": "ресурс, часы"
+      }
+    ],
+    "assumptions": [
+      "постоянная нагрузка и скорость",
+      "базовая надёжность метода L10"
+    ],
+    "warnings": [
+      "Не заменяет скорректированный ресурс производителя"
+    ],
+    "sourceIds": [
+      "skf.bearing_life"
+    ],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "bearing_equivalent_dynamic",
+    "version": 1,
+    "titleRu": "Эквивалентная динамическая нагрузка",
+    "classification": "manufacturer_method",
+    "expression": [
+      "P=X*Fr+Y*Fa"
+    ],
+    "inputs": [
+      {
+        "key": "Fr",
+        "unit": "N",
+        "descriptionRu": "радиальная"
+      },
+      {
+        "key": "Fa",
+        "unit": "N",
+        "descriptionRu": "осевая"
+      },
+      {
+        "key": "X",
+        "unit": "-",
+        "descriptionRu": "коэффициент каталога"
+      },
+      {
+        "key": "Y",
+        "unit": "-",
+        "descriptionRu": "коэффициент каталога"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "P",
+        "unit": "N",
+        "descriptionRu": "эквивалентная нагрузка"
+      }
+    ],
+    "assumptions": [
+      "X и Y соответствуют типу и отношению нагрузок"
+    ],
+    "warnings": [
+      "Нельзя использовать универсальные X/Y; брать из каталога конкретного производителя"
+    ],
+    "sourceIds": [
+      "skf.catalog.rolling"
+    ],
+    "reviewStatus": "requires_standard_table"
+  },
+  {
+    "id": "spur_gear_basic",
+    "version": 1,
+    "titleRu": "Базовая геометрия прямозубой пары",
+    "classification": "physics_verified",
+    "expression": [
+      "d1=m*z1",
+      "d2=m*z2",
+      "a=(d1+d2)/2",
+      "da=m*(z+2)",
+      "df=m*(z-2.5)",
+      "i=z2/z1"
+    ],
+    "inputs": [
+      {
+        "key": "m",
+        "unit": "mm",
+        "descriptionRu": "модуль"
+      },
+      {
+        "key": "z1",
+        "unit": "-",
+        "descriptionRu": "зубья шестерни"
+      },
+      {
+        "key": "z2",
+        "unit": "-",
+        "descriptionRu": "зубья колеса"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "d1",
+        "unit": "mm",
+        "descriptionRu": "делительный диаметр"
+      },
+      {
+        "key": "d2",
+        "unit": "mm",
+        "descriptionRu": "делительный диаметр"
+      },
+      {
+        "key": "a",
+        "unit": "mm",
+        "descriptionRu": "межосевое"
+      },
+      {
+        "key": "i",
+        "unit": "-",
+        "descriptionRu": "отношение"
+      }
+    ],
+    "assumptions": [
+      "стандартный исходный контур",
+      "угол 20°",
+      "нулевое смещение"
+    ],
+    "warnings": [
+      "da/df недействительны для смещённого или специального профиля"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "helical_gear_basic",
+    "version": 1,
+    "titleRu": "Базовая геометрия косозубой пары",
+    "classification": "physics_verified",
+    "expression": [
+      "mt=mn/cos(beta)",
+      "d=mt*z",
+      "a=(d1+d2)/2"
+    ],
+    "inputs": [
+      {
+        "key": "mn",
+        "unit": "mm",
+        "descriptionRu": "нормальный модуль"
+      },
+      {
+        "key": "beta",
+        "unit": "rad",
+        "descriptionRu": "угол наклона"
+      },
+      {
+        "key": "z1",
+        "unit": "-",
+        "descriptionRu": "зубья"
+      },
+      {
+        "key": "z2",
+        "unit": "-",
+        "descriptionRu": "зубья"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "mt",
+        "unit": "mm",
+        "descriptionRu": "торцовый модуль"
+      },
+      {
+        "key": "d1",
+        "unit": "mm",
+        "descriptionRu": "диаметр"
+      },
+      {
+        "key": "d2",
+        "unit": "mm",
+        "descriptionRu": "диаметр"
+      },
+      {
+        "key": "a",
+        "unit": "mm",
+        "descriptionRu": "межосевое"
+      }
+    ],
+    "assumptions": [
+      "параллельные оси",
+      "нулевые суммарные смещения"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "gear_forces",
+    "version": 1,
+    "titleRu": "Силы в цилиндрическом зацеплении",
+    "classification": "physics_verified",
+    "expression": [
+      "Ft=2*T/d",
+      "Fr=Ft*tan(alpha_t)",
+      "Fa=Ft*tan(beta)"
+    ],
+    "inputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "делительный диаметр"
+      },
+      {
+        "key": "alpha_t",
+        "unit": "rad",
+        "descriptionRu": "торцовый угол давления"
+      },
+      {
+        "key": "beta",
+        "unit": "rad",
+        "descriptionRu": "угол наклона"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Ft",
+        "unit": "N",
+        "descriptionRu": "окружная"
+      },
+      {
+        "key": "Fr",
+        "unit": "N",
+        "descriptionRu": "радиальная"
+      },
+      {
+        "key": "Fa",
+        "unit": "N",
+        "descriptionRu": "осевая"
+      }
+    ],
+    "assumptions": [
+      "идеализированное зацепление без динамического коэффициента"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "key_preliminary",
+    "version": 1,
+    "titleRu": "Шпонка: срез и смятие",
+    "classification": "preliminary_only",
+    "expression": [
+      "Ft=2*T/d",
+      "tau=Ft/(b*l)",
+      "sigmaBearing=Ft/(hEff*l)"
+    ],
+    "inputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "диаметр вала"
+      },
+      {
+        "key": "b",
+        "unit": "m",
+        "descriptionRu": "ширина"
+      },
+      {
+        "key": "hEff",
+        "unit": "m",
+        "descriptionRu": "эффективная высота смятия"
+      },
+      {
+        "key": "l",
+        "unit": "m",
+        "descriptionRu": "рабочая длина"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "tau",
+        "unit": "Pa",
+        "descriptionRu": "срез"
+      },
+      {
+        "key": "sigmaBearing",
+        "unit": "Pa",
+        "descriptionRu": "смятие"
+      }
+    ],
+    "assumptions": [
+      "равномерная нагрузка"
+    ],
+    "warnings": [
+      "Эффективная высота и допускаемые напряжения зависят от стандарта и конструкции"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "spline_bearing_preliminary",
+    "version": 1,
+    "titleRu": "Шлиц: предварительное смятие",
+    "classification": "preliminary_only",
+    "expression": [
+      "Ft=2*T/dm",
+      "p=Ft/(zEff*h*l)"
+    ],
+    "inputs": [
+      {
+        "key": "T",
+        "unit": "N*m",
+        "descriptionRu": "момент"
+      },
+      {
+        "key": "dm",
+        "unit": "m",
+        "descriptionRu": "средний диаметр"
+      },
+      {
+        "key": "zEff",
+        "unit": "-",
+        "descriptionRu": "эффективное число зубьев"
+      },
+      {
+        "key": "h",
+        "unit": "m",
+        "descriptionRu": "рабочая высота"
+      },
+      {
+        "key": "l",
+        "unit": "m",
+        "descriptionRu": "длина"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "p",
+        "unit": "Pa",
+        "descriptionRu": "среднее давление"
+      }
+    ],
+    "assumptions": [
+      "равномерность учитывается zEff"
+    ],
+    "warnings": [
+      "zEff, h и допускаемое давление должны определяться выбранным методом/стандартом"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "bolt_tension_preliminary",
+    "version": 1,
+    "titleRu": "Болт на растяжение",
+    "classification": "preliminary_only",
+    "expression": [
+      "sigma=F/As"
+    ],
+    "inputs": [
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "осевая сила"
+      },
+      {
+        "key": "As",
+        "unit": "m2",
+        "descriptionRu": "расчётная площадь резьбы"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "sigma",
+        "unit": "Pa",
+        "descriptionRu": "напряжение"
+      }
+    ],
+    "assumptions": [
+      "центральная статическая нагрузка"
+    ],
+    "warnings": [
+      "Не учитывает предварительную затяжку, податливость стыка и усталость"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "bolt_direct_shear_preliminary",
+    "version": 1,
+    "titleRu": "Болт на прямой срез",
+    "classification": "preliminary_only",
+    "expression": [
+      "tau=F/(n*A_shear)"
+    ],
+    "inputs": [
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "сила"
+      },
+      {
+        "key": "n",
+        "unit": "-",
+        "descriptionRu": "число плоскостей/болтов"
+      },
+      {
+        "key": "A_shear",
+        "unit": "m2",
+        "descriptionRu": "площадь одной плоскости"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "tau",
+        "unit": "Pa",
+        "descriptionRu": "касательное напряжение"
+      }
+    ],
+    "assumptions": [
+      "равномерное распределение"
+    ],
+    "warnings": [
+      "Не учитывает смятие, эксцентриситет и проскальзывание"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "fillet_weld_direct_shear",
+    "version": 1,
+    "titleRu": "Угловой шов на прямой срез",
+    "classification": "preliminary_only",
+    "expression": [
+      "a=0.707*k",
+      "Aw=a*L",
+      "tau=F/Aw"
+    ],
+    "inputs": [
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "сила"
+      },
+      {
+        "key": "k",
+        "unit": "m",
+        "descriptionRu": "катет"
+      },
+      {
+        "key": "L",
+        "unit": "m",
+        "descriptionRu": "эффективная длина"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "tau",
+        "unit": "Pa",
+        "descriptionRu": "среднее напряжение"
+      }
+    ],
+    "assumptions": [
+      "равномерный прямой срез"
+    ],
+    "warnings": [
+      "Не применять к сложной группе швов без нормативного расчёта"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "compression_spring_basic",
+    "version": 1,
+    "titleRu": "Цилиндрическая пружина сжатия",
+    "classification": "preliminary_only",
+    "expression": [
+      "k=G*d^4/(8*D^3*n)",
+      "delta=F/k",
+      "C=D/d",
+      "Kw=(4*C-1)/(4*C-4)+0.615/C",
+      "tau=Kw*8*F*D/(pi*d^3)"
+    ],
+    "inputs": [
+      {
+        "key": "G",
+        "unit": "Pa",
+        "descriptionRu": "модуль сдвига"
+      },
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "проволока"
+      },
+      {
+        "key": "D",
+        "unit": "m",
+        "descriptionRu": "средний диаметр"
+      },
+      {
+        "key": "n",
+        "unit": "-",
+        "descriptionRu": "рабочие витки"
+      },
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "сила"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "k",
+        "unit": "N/m",
+        "descriptionRu": "жёсткость"
+      },
+      {
+        "key": "delta",
+        "unit": "m",
+        "descriptionRu": "деформация"
+      },
+      {
+        "key": "tau",
+        "unit": "Pa",
+        "descriptionRu": "напряжение"
+      }
+    ],
+    "assumptions": [
+      "круглая проволока",
+      "линейная упругость"
+    ],
+    "warnings": [
+      "Проверка устойчивости, соударения витков и усталости отдельна"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "belt_speed",
+    "version": 1,
+    "titleRu": "Скорость ремня",
+    "classification": "physics_verified",
+    "expression": [
+      "v=pi*d*n/60"
+    ],
+    "inputs": [
+      {
+        "key": "d",
+        "unit": "m",
+        "descriptionRu": "диаметр"
+      },
+      {
+        "key": "n",
+        "unit": "rpm",
+        "descriptionRu": "частота"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "v",
+        "unit": "m/s",
+        "descriptionRu": "скорость"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "chain_length_approx",
+    "version": 1,
+    "titleRu": "Приближённая длина цепи",
+    "classification": "preliminary_only",
+    "expression": [
+      "x=a/p",
+      "Lp=2*x+(z1+z2)/2+(z2-z1)^2/(4*pi^2*x)"
+    ],
+    "inputs": [
+      {
+        "key": "a",
+        "unit": "m",
+        "descriptionRu": "межосевое"
+      },
+      {
+        "key": "p",
+        "unit": "m",
+        "descriptionRu": "шаг"
+      },
+      {
+        "key": "z1",
+        "unit": "-",
+        "descriptionRu": "зубья"
+      },
+      {
+        "key": "z2",
+        "unit": "-",
+        "descriptionRu": "зубья"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Lp",
+        "unit": "pitches",
+        "descriptionRu": "число шагов"
+      }
+    ],
+    "assumptions": [
+      "две звёздочки",
+      "параллельные оси"
+    ],
+    "warnings": [
+      "Округлить до допустимого чётного числа звеньев и пересчитать межосевое"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_engineer_review"
+  },
+  {
+    "id": "pressure_force_area",
+    "version": 1,
+    "titleRu": "Сила, давление и площадь",
+    "classification": "physics_verified",
+    "expression": [
+      "F=p*A",
+      "p=F/A"
+    ],
+    "inputs": [
+      {
+        "key": "p",
+        "unit": "Pa",
+        "descriptionRu": "давление"
+      },
+      {
+        "key": "A",
+        "unit": "m2",
+        "descriptionRu": "площадь"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "F",
+        "unit": "N",
+        "descriptionRu": "сила"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "flow_velocity_area",
+    "version": 1,
+    "titleRu": "Объёмный расход",
+    "classification": "physics_verified",
+    "expression": [
+      "Q=v*A"
+    ],
+    "inputs": [
+      {
+        "key": "v",
+        "unit": "m/s",
+        "descriptionRu": "скорость"
+      },
+      {
+        "key": "A",
+        "unit": "m2",
+        "descriptionRu": "площадь"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "Q",
+        "unit": "m3/s",
+        "descriptionRu": "расход"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "thread_pitch_tpi",
+    "version": 1,
+    "titleRu": "Шаг и нитки на дюйм",
+    "classification": "physics_verified",
+    "expression": [
+      "TPI=25.4/P_mm",
+      "P_mm=25.4/TPI"
+    ],
+    "inputs": [
+      {
+        "key": "P_mm",
+        "unit": "mm",
+        "descriptionRu": "шаг"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "TPI",
+        "unit": "1/in",
+        "descriptionRu": "ниток на дюйм"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "bolt_circle_coordinates",
+    "version": 1,
+    "titleRu": "Координаты отверстий по окружности",
+    "classification": "physics_verified",
+    "expression": [
+      "theta_i=theta0+2*pi*i/N",
+      "x_i=xc+R*cos(theta_i)",
+      "y_i=yc+R*sin(theta_i)"
+    ],
+    "inputs": [
+      {
+        "key": "xc",
+        "unit": "mm",
+        "descriptionRu": "центр X"
+      },
+      {
+        "key": "yc",
+        "unit": "mm",
+        "descriptionRu": "центр Y"
+      },
+      {
+        "key": "R",
+        "unit": "mm",
+        "descriptionRu": "радиус"
+      },
+      {
+        "key": "N",
+        "unit": "-",
+        "descriptionRu": "число"
+      },
+      {
+        "key": "theta0",
+        "unit": "rad",
+        "descriptionRu": "начальный угол"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "points",
+        "unit": "mm",
+        "descriptionRu": "координаты"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "truncated_cone_development",
+    "version": 1,
+    "titleRu": "Развёртка усечённого конуса",
+    "classification": "physics_verified",
+    "expression": [
+      "s=sqrt(h^2+(R-r)^2)",
+      "Lo=s*R/(R-r)",
+      "Li=s*r/(R-r)",
+      "phi=2*pi*(R-r)/s"
+    ],
+    "inputs": [
+      {
+        "key": "R",
+        "unit": "m",
+        "descriptionRu": "большой радиус"
+      },
+      {
+        "key": "r",
+        "unit": "m",
+        "descriptionRu": "малый радиус"
+      },
+      {
+        "key": "h",
+        "unit": "m",
+        "descriptionRu": "высота"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "s",
+        "unit": "m",
+        "descriptionRu": "образующая"
+      },
+      {
+        "key": "Lo",
+        "unit": "m",
+        "descriptionRu": "наружный радиус развёртки"
+      },
+      {
+        "key": "Li",
+        "unit": "m",
+        "descriptionRu": "внутренний радиус"
+      },
+      {
+        "key": "phi",
+        "unit": "rad",
+        "descriptionRu": "угол сектора"
+      }
+    ],
+    "assumptions": [
+      "R>r",
+      "осесимметричный конус"
+    ],
+    "warnings": [],
+    "sourceIds": [],
+    "reviewStatus": "automatic"
+  },
+  {
+    "id": "fit_iso286",
+    "version": 1,
+    "titleRu": "Допуски и посадки ISO 286/ГОСТ",
+    "classification": "standard_table_required",
+    "expression": [
+      "lookup IT grade and fundamental deviation by size interval"
+    ],
+    "inputs": [
+      {
+        "key": "nominal",
+        "unit": "mm",
+        "descriptionRu": "номинал"
+      },
+      {
+        "key": "holeField",
+        "unit": "-",
+        "descriptionRu": "поле отверстия"
+      },
+      {
+        "key": "shaftField",
+        "unit": "-",
+        "descriptionRu": "поле вала"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "ES",
+        "unit": "um",
+        "descriptionRu": "верхнее отверстия"
+      },
+      {
+        "key": "EI",
+        "unit": "um",
+        "descriptionRu": "нижнее отверстия"
+      },
+      {
+        "key": "es",
+        "unit": "um",
+        "descriptionRu": "верхнее вала"
+      },
+      {
+        "key": "ei",
+        "unit": "um",
+        "descriptionRu": "нижнее вала"
+      }
+    ],
+    "assumptions": [],
+    "warnings": [
+      "Требуется лицензированная и проверенная таблица ГОСТ 25346/25347"
+    ],
+    "sourceIds": [
+      "rst.gost25346",
+      "rst.gost25347"
+    ],
+    "reviewStatus": "requires_standard_table"
+  },
+  {
+    "id": "gear_strength_normative",
+    "version": 1,
+    "titleRu": "Прочность зубчатой передачи",
+    "classification": "standard_table_required",
+    "expression": [
+      "normative multi-factor method"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "assumptions": [],
+    "warnings": [
+      "Не реализовывать упрощённой заменой; требуется выбранный нормативный метод и коэффициенты"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "requires_standard_table"
+  },
+  {
+    "id": "lifting_sling_preliminary",
+    "version": 1,
+    "titleRu": "Симметричная строповка",
+    "classification": "blocked_for_safety",
+    "expression": [
+      "T=W/(n*cos(theta_from_vertical))"
+    ],
+    "inputs": [
+      {
+        "key": "W",
+        "unit": "N",
+        "descriptionRu": "вес"
+      },
+      {
+        "key": "n",
+        "unit": "-",
+        "descriptionRu": "число несущих ветвей"
+      },
+      {
+        "key": "theta_from_vertical",
+        "unit": "rad",
+        "descriptionRu": "угол от вертикали"
+      }
+    ],
+    "outputs": [
+      {
+        "key": "T",
+        "unit": "N",
+        "descriptionRu": "идеальная сила в ветви"
+      }
+    ],
+    "assumptions": [
+      "идеальная симметрия"
+    ],
+    "warnings": [
+      "Не является подбором стропа; не учитывает динамику, неравномерность, схему и нормы"
+    ],
+    "sourceIds": [],
+    "reviewStatus": "blocked"
+  }
+]
